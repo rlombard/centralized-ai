@@ -1,4 +1,5 @@
 import os
+import shutil
 from transformers import (
     AutoTokenizer,
     AutoModelForSeq2SeqLM,
@@ -52,6 +53,12 @@ def download_yolov5():
     model_state_path = MODELS["yolov5s"]["path"]
     torch.save(model.state_dict(), model_state_path)
     print(f"YOLOv5 model saved to {model_state_path}")
+
+    # Move the yolov5s.pt model to the proper directory (if not already placed)
+    if os.path.exists("yolov5s.pt"):
+        print("Moving YOLOv5 model to the correct directory...")
+        shutil.move("yolov5s.pt", model_state_path)
+        print(f"YOLOv5 model moved to {model_state_path}")
 
 # Download ImageNet class labels
 def download_imagenet_classes():

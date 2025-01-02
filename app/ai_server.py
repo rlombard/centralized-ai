@@ -56,7 +56,7 @@ async def load_models():
     text_model = AutoModelForSeq2SeqLM.from_pretrained("./app/models/t5-small")
 
     logging.info("Loading YOLOv5 image tagging model...")
-    image_model = torch.hub.load('ultralytics/yolov5', 'custom', path='./app/models/yolov5s.pt')
+    image_model = torch.hub.load('ultralytics/yolov5', 'custom', path='./app/models/yolov5s.pt', force_reload=True)
 
     logging.info("Loading BLIP model for image captioning...")
     blip_processor = BlipProcessor.from_pretrained("./app/models/blip")
