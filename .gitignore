@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+
+# Installed packages
+*.egg-info/
+*.egg
+
+# Python log files
+*.log
+
+# Test outputs
+coverage.xml
+*.cover
+
+# Environment variables and config files
+.env
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+
+# Temporary files
+*.bak
+*.tmp
+*.temp
+.DS_Store
+
+# Generated files
+*.pyc
+*.pyo
+*.pyd
+
+# Model files
+/models/*.hailo
+/models/*.pth
+/models/*.onnx
+
