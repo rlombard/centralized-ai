@@ -123,7 +123,7 @@ Contributions are welcome! Please follow the steps below:
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is fully open source and free to use as is.
 
 ## Acknowledgments
 
@@ -131,4 +131,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 - Libraries and frameworks used in this project.
 
 ---
-For questions or suggestions, please contact [Your Email/Contact Information].
+For questions or suggestions, please create a discussion on GitHub
