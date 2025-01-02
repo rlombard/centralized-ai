@@ -76,33 +76,33 @@ The following endpoints are available:
 
 1. **Health Check**
    ```bash
-   curl -X GET http://localhost:5000/health
+   curl -X GET http://localhost:8000/health
    ```
 
 2. **Tag Image**
    ```bash
-   curl -X POST http://localhost:5000/tag-image \
+   curl -X POST http://localhost:8000/tag-image \
    -H "Content-Type: multipart/form-data" \
    -F "file=@path/to/your/image.jpg"
    ```
 
 3. **Describe Image**
    ```bash
-   curl -X POST http://localhost:5000/describe-image \
+   curl -X POST http://localhost:8000/describe-image \
    -H "Content-Type: multipart/form-data" \
    -F "file=@path/to/your/image.jpg"
    ```
 
 4. **Classify Image**
    ```bash
-   curl -X POST http://localhost:5000/classify-image \
+   curl -X POST http://localhost:8000/classify-image \
    -H "Content-Type: multipart/form-data" \
    -F "file=@path/to/your/image.jpg"
    ```
 
 5. **Analyze Text**
    ```bash
-   curl -X POST http://localhost:5000/analyze-text \
+   curl -X POST http://localhost:8000/analyze-text \
    -H "Content-Type: application/json" \
    -d '{"text": "Your text here"}'
    ```
